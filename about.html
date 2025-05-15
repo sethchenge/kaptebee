@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - STEM Academy</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- About page specific CSS -->
+    <link rel="stylesheet" href="about-styles.css">
+</head>
+<body>
+    <!-- Sidebar Navigation for mobile -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <button id="closeSidebar" class="btn close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="sidebar-content">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="academics.html">Academics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events & Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">News & Updates</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Student Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <!-- Top Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <span class="brand-text">STEM Academy</span>
+                </a>
+                <button id="sidebarToggle" class="navbar-toggler" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="academics.html">Academics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events & Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">News & Updates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Student Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="container">
+                <h1>About STEM Academy</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Our Story Section -->
+        <section class="our-story">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="section-title text-start">Our Story</h2>
+                        <p>STEM Academy was founded in 2015 with a vision to revolutionize education by integrating science, technology, engineering, and mathematics in a practical, hands-on learning environment. What began as a small initiative with just 50 students has now grown into a leading educational institution with over 1,200 students from diverse backgrounds.</p>
+                        <p>Our journey has been marked by continuous innovation, adapting to rapidly evolving technologies and educational methodologies. We believe that the future belongs to those who can harness the power of technology to solve real-world problems, and our mission is to prepare our students to be at the forefront of this technological revolution.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-image">
+                            <img src="/api/placeholder/600/400" alt="STEM Academy Building" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision Section -->
+        <section class="mission-vision">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mission-card">
+                            <div class="icon-box">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3>Our Mission</h3>
+                            <p>To foster a culture of innovation and critical thinking by providing students with hands-on experience in STEM disciplines, preparing them to address complex global challenges through technological solutions.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="vision-card">
+                            <div class="icon-box">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h3>Our Vision</h3>
+                            <p>To be recognized globally as a center of excellence in STEM education, producing graduates who lead technological innovation and contribute meaningfully to scientific advancement and sustainable development.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Values Section -->
+        <section class="core-values">
+            <div class="container">
+                <h2 class="section-title">Our Core Values</h2>
+                <div class="row g-4">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="value-card">
+                            <div class="icon-box">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4>Innovation</h4>
+                            <p>Embracing new ideas and approaches to solve complex problems.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="value-card">
+                            <div class="icon-box">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Collaboration</h4>
+                            <p>Working together across disciplines to achieve common goals.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="value-card">
+                            <div class="icon-box">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <h4>Integrity</h4>
+                            <p>Upholding ethical standards in research and learning.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="value-card">
+                            <div class="icon-box">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h4>Sustainability</h4>
+                            <p>Developing solutions that respect environmental and social concerns.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Achievements Section -->
+        <section class="achievements">
+            <div class="container">
+                <h2 class="section-title">Our Achievements</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>2025</h4>
+                                    <p>Initiated the Innovation Sprint Challenge focused on energizing creativity through technology.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>2024</h4>
+                                    <p>Expanded our facilities with a state-of-the-art innovation hub and technology lab.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>2022</h4>
+                                    <p>Received the National Excellence in STEM Education Award for our innovative curriculum.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>2020</h4>
+                                    <p>Established partnerships with leading technology companies to enhance student internship opportunities.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>2018</h4>
+                                    <p>Launched our first international exchange program with STEM schools in Singapore and Finland.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>2015</h4>
+                                    <p>Founded STEM Academy with a mission to revolutionize STEM education.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="stats-container">
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="1200">0</div>
+                                <div class="stat-title">Students</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="85">0</div>
+                                <div class="stat-title">Faculty Members</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="95">0</div>
+                                <div class="stat-title">Awards Won</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="23">0</div>
+                                <div class="stat-title">Partner Organizations</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Facilities Section -->
+        <section class="facilities">
+            <div class="container">
+                <h2 class="section-title">Our Facilities</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="facility-card">
+                            <img src="/api/placeholder/400/250" class="img-fluid" alt="Advanced Technology Lab">
+                            <div class="facility-content">
+                                <h4>Advanced Technology Lab</h4>
+                                <p>Equipped with the latest hardware and software for programming, robotics, and artificial intelligence research.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="facility-card">
+                            <img src="/api/placeholder/400/250" class="img-fluid" alt="Innovation Hub">
+                            <div class="facility-content">
+                                <h4>Innovation Hub</h4>
+                                <p>A collaborative space where students can brainstorm, prototype, and develop their innovative ideas into tangible solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="facility-card">
+                            <img src="/api/placeholder/400/250" class="img-fluid" alt="Digital Library">
+                            <div class="facility-content">
+                                <h4>Digital Library</h4>
+                                <p>Access to thousands of digital resources, research papers, and academic journals to support student learning and research.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">What Our Community Says</h2>
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-content">
+                                            <p>"STEM Academy has transformed my child's approach to learning. The practical, hands-on experience has ignited a passion for science and technology that I never expected to see."</p>
+                                        </div>
+                                        <div class="testimonial-author">
+                                            <img src="/api/placeholder/100/100" class="rounded-circle" alt="Parent">
+                                            <div>
+                                                <h5>Sarah Johnson</h5>
+                                                <p>Parent</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-content">
+                                            <p>"The innovative teaching methods at STEM Academy prepared me for university in ways I couldn't have imagined. The emphasis on problem-solving and critical thinking has been invaluable in my engineering studies."</p>
+                                        </div>
+                                        <div class="testimonial-author">
+                                            <img src="/api/placeholder/100/100" class="rounded-circle" alt="Alumni">
+                                            <div>
+                                                <h5>David Nguyen</h5>
+                                                <p>Alumni, Class of 2022</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-content">
+                                            <p>"As an industry partner, we've been consistently impressed by the quality of students coming from STEM Academy. Their practical skills and innovative thinking make them stand out in our recruitment process."</p>
+                                        </div>
+                                        <div class="testimonial-author">
+                                            <img src="/api/placeholder/100/100" class="rounded-circle" alt="Industry Partner">
+                                            <div>
+                                                <h5>Michael Lee</h5>
+                                                <p>Tech Industry Partner</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Join Our STEM Community</h2>
+                    <p>Be part of our innovative learning environment and prepare for a future in technology and science.</p>
+                    <a href="contact.html" class="btn btn-light">Contact Us Today</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>STEM Academy</h5>
+                        <p>Fostering innovation and creativity through technology education since 2015.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="academics.html">Academics</a></li>
+                            <li><a href="events.html">Events & Gallery</a></li>
+                            <li><a href="projects.html">Student Projects</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Connect With Us</h5>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        <p class="mt-3">
+                            <i class="fas fa-map-marker-alt"></i> 123 Education Blvd<br>
+                            <i class="fas fa-phone"></i> (123) 456-7890<br>
+                            <i class="fas fa-envelope"></i> info@stemacademy.edu
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="copyright-text">© 2025 STEM Academy. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    <!-- About page specific JavaScript -->
+    <script src="about-script.js"></script>
+</body>
+</html>

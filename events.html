@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Gallery - STEM Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-text">STEM Academy</span>
+            </a>
+            <button id="sidebarToggle" class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="academics.html">Academics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="events.html">Events & Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News & Updates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Student Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Text Animation -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 text-center">
+                    <h1 class="animated-heading" data-aos="fade-up">Events & Gallery</h1>
+                    <div class="scrolling-text-container">
+                        <p class="scrolling-text">Showcasing our vibrant community, innovation, and academic excellence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="events-section py-5" id="events">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-aos="fade-up">Upcoming Events</h2>
+            <div class="row">
+                <!-- Event Card 1 -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">JUN</span>
+                        </div>
+                        <div class="event-image">
+                            <img src="images/event-science-fair.jpg" alt="Science Fair" class="img-fluid">
+                        </div>
+                        <div class="event-details">
+                            <h3>Annual Science Fair</h3>
+                            <div class="event-meta">
+                                <span><i class="fas fa-clock"></i> 9:00 AM - 4:00 PM</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Main Campus</span>
+                            </div>
+                            <p>Students showcase innovative scientific projects and compete for scholarships.</p>
+                            <a href="#" class="btn btn-outline-success">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Event Card 2 -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">22</span>
+                            <span class="month">JUN</span>
+                        </div>
+                        <div class="event-image">
+                            <img src="images/event-robotics.jpg" alt="Robotics Competition" class="img-fluid">
+                        </div>
+                        <div class="event-details">
+                            <h3>Robotics Competition</h3>
+                            <div class="event-meta">
+                                <span><i class="fas fa-clock"></i> 10:00 AM - 3:00 PM</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Tech Lab</span>
+                            </div>
+                            <p>Regional robotics competition featuring teams from across the district.</p>
+                            <a href="#" class="btn btn-outline-success">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Event Card 3 -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">30</span>
+                            <span class="month">JUN</span>
+                        </div>
+                        <div class="event-image">
+                            <img src="images/event-workshop.jpg" alt="STEM Workshop" class="img-fluid">
+                        </div>
+                        <div class="event-details">
+                            <h3>Parent-Teacher STEM Workshop</h3>
+                            <div class="event-meta">
+                                <span><i class="fas fa-clock"></i> 5:30 PM - 7:30 PM</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Auditorium</span>
+                            </div>
+                            <p>Interactive session to help parents support STEM education at home.</p>
+                            <a href="#" class="btn btn-outline-success">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4" data-aos="fade-up">
+                <a href="#" class="btn btn-success">View All Events</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Past Events Gallery -->
+    <section class="gallery-section py-5 bg-light" id="gallery">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-aos="fade-up">Event Gallery</h2>
+            
+            <div class="gallery-filter text-center mb-4" data-aos="fade-up">
+                <button class="btn btn-filter active" data-filter="all">All</button>
+                <button class="btn btn-filter" data-filter="competitions">Competitions</button>
+                <button class="btn btn-filter" data-filter="workshops">Workshops</button>
+                <button class="btn btn-filter" data-filter="field-trips">Field Trips</button>
+                <button class="btn btn-filter" data-filter="ceremonies">Ceremonies</button>
+            </div>
+            
+            <div class="row gallery-container">
+                <!-- Gallery Item 1 -->
+                <div class="col-md-4 col-sm-6 gallery-item competitions" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-card">
+                        <img src="images/gallery1.jpg" alt="Science Competition" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Science Competition 2024</h4>
+                                <p>Student finalists presenting their projects</p>
+                                <a href="images/gallery1.jpg" class="gallery-popup">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 2 -->
+                <div class="col-md-4 col-sm-6 gallery-item workshops" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="gallery-card">
+                        <img src="images/gallery2.jpg" alt="Coding Workshop" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Coding Workshop</h4>
+                                <p>Students learning advanced programming techniques</p>
+                                <a href="images/gallery2.jpg" class="gallery-popup">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 3 -->
+                <div class="col-md-4 col-sm-6 gallery-item field-trips" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="gallery-card">
+                        <img src="images/gallery3.jpg" alt="Museum Field Trip" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Museum of Science Field Trip</h4>
+                                <p>Students exploring interactive exhibits</p>
+                                <a href="images/gallery3.jpg" class="gallery-popup">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 4 -->
+                <div class="col-md-4 col-sm-6 gallery-item ceremonies" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-card">
+                        <img src="images/gallery4.jpg" alt="Graduation Ceremony" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Graduation Ceremony</h4>
+                                <p>Celebrating our graduating class of 2024</p>
+                                <a href="images/gallery4.jpg" class="gallery-popup">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 5 -->
+                <div class="col-md-4 col-sm-6 gallery-item competitions" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="gallery-card">
+                        <img src="images/gallery5.jpg" alt="Math Competition" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Mathematics Olympiad</h4>
+                                <p>Regional mathematics competition finalists</p>
+                                <a href="images/gallery5.jpg" class="gallery-popup">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 6 -->
+                <div class="col-md-4 col-sm-6 gallery-item workshops" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="gallery-card">
+                        <img src="images/gallery6.jpg" alt="Robotics Workshop" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Robotics Workshop</h4>
+                                <p>Hands-on robotics engineering session</p>
+                                <a href="images/gallery6.jpg" class="gallery-popup">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4" data-aos="fade-up">
+                <a href="#" class="btn btn-success">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="leadership-section py-5" id="leadership">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-aos="fade-up">Meet Our Leadership</h2>
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="leadershipCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#leadershipCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Principal"></button>
+                            <button type="button" data-bs-target="#leadershipCarousel" data-bs-slide-to="1" aria-label="Deputy Principal"></button>
+                            <button type="button" data-bs-target="#leadershipCarousel" data-bs-slide-to="2" aria-label="Head of Science"></button>
+                            <button type="button" data-bs-target="#leadershipCarousel" data-bs-slide-to="3" aria-label="Head of Technology"></button>
+                            <button type="button" data-bs-target="#leadershipCarousel" data-bs-slide-to="4" aria-label="Head of Mathematics"></button>
+                        </div>
+                        
+                        <div class="carousel-inner">
+                            <!-- Principal -->
+                            <div class="carousel-item active">
+                                <div class="row align-items-center">
+                                    <div class="col-md-5" data-aos="fade-right">
+                                        <div class="leader-image">
+                                            <img src="images/principal.jpg" alt="Principal" class="img-fluid rounded">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7" data-aos="fade-left">
+                                        <div class="leader-info character-animation">
+                                            <h3 class="leader-name">Dr. Sarah Johnson</h3>
+                                            <h4 class="leader-title">Principal</h4>
+                                            <p class="leader-description">
+                                                Dr. Johnson brings over 20 years of experience in STEM education leadership. With a Ph.D. in Educational Leadership and a background in Chemistry, she has transformed our academy into a center of excellence for innovative learning. Her vision emphasizes project-based learning, technology integration, and collaborative partnerships with industry leaders.
+                                            </p>
+                                            <div class="leader-contact">
+                                                <a href="mailto:principal@stemacademy.edu" class="btn btn-sm btn-outline-success"><i class="fas fa-envelope"></i> Contact</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Deputy Principal -->
+                            <div class="carousel-item">
+                                <div class="row align-items-center">
+                                    <div class="col-md-5" data-aos="fade-right">
+                                        <div class="leader-image">
+                                            <img src="images/deputy-principal.jpg" alt="Deputy Principal" class="img-fluid rounded">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7" data-aos="fade-left">
+                                        <div class="leader-info character-animation">
+                                            <h3 class="leader-name">Prof. Michael Chen</h3>
+                                            <h4 class="leader-title">Deputy Principal</h4>
+                                            <p class="leader-description">
+                                                Prof. Chen oversees curriculum development and student affairs at STEM Academy. With a Master's in Education Technology and extensive experience in Mathematics education, he has implemented innovative assessment methods and personalized learning programs that have significantly improved student outcomes and engagement.
+                                            </p>
+                                            <div class="leader-contact">
+                                                <a href="mailto:deputy@stemacademy.edu" class="btn btn-sm btn-outline-success"><i class="fas fa-envelope"></i> Contact</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Head of Science -->
+                            <div class="carousel-item">
+                                <div class="row align-items-center">
+                                    <div class="col-md-5" data-aos="fade-right">
+                                        <div class="leader-image">
+                                            <img src="images/head-science.jpg" alt="Head of Science" class="img-fluid rounded">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7" data-aos="fade-left">
+                                        <div class="leader-info character-animation">
+                                            <h3 class="leader-name">Dr. Emily Nguyen</h3>
+                                            <h4 class="leader-title">Head of Science Department</h4>
+                                            <p class="leader-description">
+                                                Dr. Nguyen leads our Science Department with expertise in Biology and Environmental Science. Her research background in genetic engineering brings real-world applications into the classroom. She has established partnerships with local research institutions, providing students with internship opportunities and access to cutting-edge laboratory equipment.
+                                            </p>
+                                            <div class="leader-contact">
+                                                <a href="mailto:science@stemacademy.edu" class="btn btn-sm btn-outline-success"><i class="fas fa-envelope"></i> Contact</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Head of Technology -->
+                            <div class="carousel-item">
+                                <div class="row align-items-center">
+                                    <div class="col-md-5" data-aos="fade-right">
+                                        <div class="leader-image">
+                                            <img src="images/head-technology.jpg" alt="Head of Technology" class="img-fluid rounded">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7" data-aos="fade-left">
+                                        <div class="leader-info character-animation">
+                                            <h3 class="leader-name">Mr. James Rodriguez</h3>
+                                            <h4 class="leader-title">Head of Technology Department</h4>
+                                            <p class="leader-description">
+                                                Mr. Rodriguez brings industry experience from Silicon Valley to our Technology Department. His specialization in computer science and artificial intelligence has revolutionized our coding and robotics programs. Under his guidance, our students consistently excel in national technology competitions and hackathons.
+                                            </p>
+                                            <div class="leader-contact">
+                                                <a href="mailto:technology@stemacademy.edu" class="btn btn-sm btn-outline-success"><i class="fas fa-envelope"></i> Contact</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Head of Mathematics -->
+                            <div class="carousel-item">
+                                <div class="row align-items-center">
+                                    <div class="col-md-5" data-aos="fade-right">
+                                        <div class="leader-image">
+                                            <img src="images/head-math.jpg" alt="Head of Mathematics" class="img-fluid rounded">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7" data-aos="fade-left">
+                                        <div class="leader-info character-animation">
+                                            <h3 class="leader-name">Dr. Robert Patel</h3>
+                                            <h4 class="leader-title">Head of Mathematics Department</h4>
+                                            <p class="leader-description">
+                                                Dr. Patel combines theoretical mathematics with practical applications in our curriculum. His innovative approach includes computational thinking and data science integration. He has developed a progressive mathematics framework that prepares students for advanced studies while making complex concepts accessible through visual learning and real-world problem-solving.
+                                            </p>
+                                            <div class="leader-contact">
+                                                <a href="mailto:mathematics@stemacademy.edu" class="btn btn-sm btn-outline-success"><i class="fas fa-envelope"></i> Contact</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="carousel-control-prev" type="button" data-bs-target="#leadershipCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#leadershipCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Calendar Section -->
+    <section class="calendar-section py-5 bg-light" id="calendar">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-aos="fade-up">Academic Calendar</h2>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="calendar-wrapper" data-aos="fade-up">
+                        <div class="calendar-header">
+                            <button id="prevMonth" class="btn btn-sm btn-outline-success"><i class="fas fa-chevron-left"></i></button>
+                            <h3 id="currentMonth">May 2025</h3>
+                            <button id="nextMonth" class="btn btn-sm btn-outline-success"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                        
+                        <div id="calendar" class="calendar-grid">
+                            <!-- Calendar will be generated by JavaScript -->
+                        </div>
+                        
+                        <div id="eventDetails" class="event-details mt-4">
+                            <h4>Selected Date: <span id="selectedDate">No date selected</span></h4>
+                            <div id="dayEvents">
+                                <p>Select a date to view events.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact & Venue Information -->
+    <section class="contact-venue-section py-5" id="venue">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-aos="fade-up">Event Venues & Contact</h2>
+            
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="venue-info">
+                        <h3>Main Campus</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Education Drive, Science Park, CA 90210</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> events@stemacademy.edu</p>
+                        
+                        <h4 class="mt-4">Available Facilities:</h4>
+                        <ul class="venue-facilities">
+                            <li><i class="fas fa-flask"></i> Advanced Science Labs</li>
+                            <li><i class="fas fa-laptop-code"></i> Computer Labs</li>
+                            <li><i class="fas fa-microchip"></i> Robotics Arena</li>
+                            <li><i class="fas fa-users"></i> 500-seat Auditorium</li>
+                            <li><i class="fas fa-chalkboard-teacher"></i> Smart Classrooms</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.7152203503307!2d-118.4911697!3d34.0194704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDAxJzEwLjMiTiAxMTjCsDI5JzI4LjIiVw!5e0!3m2!1sen!2sus!4v1620764340572!5m2!1sen!2sus" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        
+                        <div class="venue-booking mt-4">
+                            <h4>Interested in hosting an event?</h4>
+                            <a href="#" class="btn btn-success">Request Venue Information</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mx-auto text-center" data-aos="fade-up">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for event announcements and gallery updates.</p>
+                    
+                    <form class="newsletter-form mt-4">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email address" required>
+                            <button type="submit" class="btn btn-success">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>STEM Academy</h5>
+                    <p>Inspiring the next generation of innovators through excellence in Science, Technology, Engineering, and Mathematics education.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="events.html">Events & Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p class="copyright">© 2025 STEM Academy. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar">
+        <div class="sidebar-header">
+            <span class="sidebar-brand">STEM Academy</span>
+            <button id="sidebarClose"><i class="fas fa-times"></i></button>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="events.html" class="active">Events & Gallery</a></li>
+            <li><a href="news.html">News & Updates</a></li>
+            <li><a href="projects.html">Student Projects</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="sidebar-social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="sidebar-overlay"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="events.js"></script>
+</body>
+</html>

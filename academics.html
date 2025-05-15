@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEM Academy - Academics</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="academics.css">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-text">STEM Academy</span>
+            </a>
+            <button id="sidebarToggle" class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="academics.html">Academics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events & Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News & Updates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Student Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Academics Hero Section -->
+    <section class="academics-hero">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Academic Departments</h1>
+            <p class="lead">Discover our specialized STEM departments focused on innovation and excellence</p>
+        </div>
+    </section>
+
+    <!-- Departments Section -->
+    <section class="departments-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Computer Science Department -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="department-card card">
+                        <img src="computerscience.jpeg" class="card-img-top" alt="Computer Science Department">
+                        <div class="card-body">
+                            <h5 class="card-title">Computer Science</h5>
+                            <p class="card-text">Explore programming, algorithms, artificial intelligence, and software development.</p>
+                            <button type="button" class="btn btn-learn-more" data-bs-toggle="modal" data-bs-target="#computerScienceModal">
+                                Learn More <i class="fas fa-chevron-right ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Robotics & Engineering Department -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="department-card card">
+                        <img src="robotics.jpeg" class="card-img-top" alt="Robotics & Engineering Department">
+                        <div class="card-body">
+                            <h5 class="card-title">Robotics & Engineering</h5>
+                            <p class="card-text">Design, build, and program robots while learning mechanical and electrical engineering principles.</p>
+                            <button type="button" class="btn btn-learn-more" data-bs-toggle="modal" data-bs-target="#roboticsModal">
+                                Learn More <i class="fas fa-chevron-right ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mathematics Department -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="department-card card">
+                        <img src="mathematics.jpeg" class="card-img-top" alt="Mathematics Department">
+                        <div class="card-body">
+                            <h5 class="card-title">Mathematics</h5>
+                            <p class="card-text">Develop strong foundations in algebra, calculus, statistics, and applied mathematics.</p>
+                            <button type="button" class="btn btn-learn-more" data-bs-toggle="modal" data-bs-target="#mathModal">
+                                Learn More <i class="fas fa-chevron-right ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Biology & Life Sciences Department -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="department-card card">
+                        <img src="biology.jpeg" class="card-img-top" alt="Biology & Life Sciences Department">
+                        <div class="card-body">
+                            <h5 class="card-title">Biology & Life Sciences</h5>
+                            <p class="card-text">Study organisms, ecosystems, genetics, and biotechnology through hands-on experiments.</p>
+                            <button type="button" class="btn btn-learn-more" data-bs-toggle="modal" data-bs-target="#biologyModal">
+                                Learn More <i class="fas fa-chevron-right ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Physics & Astronomy Department -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="department-card card">
+                        <img src="physics.jpeg" class="card-img-top" alt="Physics & Astronomy Department">
+                        <div class="card-body">
+                            <h5 class="card-title">Physics & Astronomy</h5>
+                            <p class="card-text">Investigate the fundamental laws of nature, mechanics, energy, and space exploration.</p>
+                            <button type="button" class="btn btn-learn-more" data-bs-toggle="modal" data-bs-target="#physicsModal">
+                                Learn More <i class="fas fa-chevron-right ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chemistry Department -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="department-card card">
+                        <img src="chemistry.jpeg" class="card-img-top" alt="Chemistry Department">
+                        <div class="card-body">
+                            <h5 class="card-title">Chemistry</h5>
+                            <p class="card-text">Discover the properties of matter, chemical reactions, and laboratory techniques.</p>
+                            <button type="button" class="btn btn-learn-more" data-bs-toggle="modal" data-bs-target="#chemistryModal">
+                                Learn More <i class="fas fa-chevron-right ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Department Modals -->
+    <!-- Computer Science Modal -->
+    <div class="modal fade" id="computerScienceModal" tabindex="-1" aria-labelledby="computerScienceModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="computerScienceModalLabel">Computer Science Department</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Department Overview</h4>
+                            <p>Our Computer Science Department provides students with comprehensive education in programming languages, algorithms, data structures, and software development methodologies. Students learn through project-based activities, coding challenges, and collaborative development.</p>
+                            <h4>Key Focus Areas:</h4>
+                            <ul>
+                                <li>Programming fundamentals (Python, Java, JavaScript)</li>
+                                <li>Web and mobile application development</li>
+                                <li>Data science and machine learning</li>
+                                <li>Cybersecurity and ethical hacking</li>
+                                <li>Game development and computer graphics</li>
+                            </ul>
+                            <p>The department hosts annual hackathons, coding competitions, and tech talks by industry professionals to provide real-world exposure to students.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="/api/placeholder/600/400" class="img-fluid rounded" alt="Computer Science Lab">
+                            <div class="ratio ratio-16x9 mt-3">
+                                <iframe src="https://www.youtube.com/embed/Dv7gLpW91FM" title="Computer Science Overview" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Robotics & Engineering Modal -->
+    <div class="modal fade" id="roboticsModal" tabindex="-1" aria-labelledby="roboticsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="roboticsModalLabel">Robotics & Engineering Department</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Department Overview</h4>
+                            <p>The Robotics & Engineering Department combines mechanical, electrical, and software engineering principles to design and build functional robots and automated systems. Students work in teams to solve real-world challenges through engineering design.</p>
+                            <h4>Key Focus Areas:</h4>
+                            <ul>
+                                <li>Mechanical design and 3D modeling</li>
+                                <li>Electronics and circuit design</li>
+                                <li>Embedded systems programming</li>
+                                <li>Sensor integration and feedback systems</li>
+                                <li>Autonomous navigation and control</li>
+                            </ul>
+                            <p>Our students regularly participate in national robotics competitions and have won several awards for their innovative designs and solutions.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="/api/placeholder/600/400" class="img-fluid rounded" alt="Robotics Lab">
+                            <div class="ratio ratio-16x9 mt-3">
+                                <iframe src="https://www.youtube.com/embed/6vLbhEe-FFs" title="Robotics Overview" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mathematics Modal -->
+    <div class="modal fade" id="mathModal" tabindex="-1" aria-labelledby="mathModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mathModalLabel">Mathematics Department</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Department Overview</h4>
+                            <p>The Mathematics Department focuses on developing strong analytical and problem-solving skills through a comprehensive curriculum that balances theory and applications. We emphasize critical thinking and mathematical reasoning.</p>
+                            <h4>Key Focus Areas:</h4>
+                            <ul>
+                                <li>Advanced algebra and calculus</li>
+                                <li>Statistics and probability</li>
+                                <li>Discrete mathematics</li>
+                                <li>Mathematical modeling</li>
+                                <li>Number theory and cryptography</li>
+                            </ul>
+                            <p>Our students regularly participate in mathematics competitions like the International Mathematical Olympiad and have achieved impressive results.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="/api/placeholder/600/400" class="img-fluid rounded" alt="Mathematics Classroom">
+                            <div class="ratio ratio-16x9 mt-3">
+                                <iframe src="https://www.youtube.com/embed/OmJ-4B-mS-Y" title="Mathematics Overview" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Biology & Life Sciences Modal -->
+    <div class="modal fade" id="biologyModal" tabindex="-1" aria-labelledby="biologyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="biologyModalLabel">Biology & Life Sciences Department</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Department Overview</h4>
+                            <p>Our Biology & Life Sciences Department explores the living world through hands-on experiments, field studies, and advanced laboratory techniques. Students learn about cellular processes, genetics, ecology, and more.</p>
+                            <h4>Key Focus Areas:</h4>
+                            <ul>
+                                <li>Molecular and cellular biology</li>
+                                <li>Genetics and genomics</li>
+                                <li>Ecology and environmental science</li>
+                                <li>Biotechnology and genetic engineering</li>
+                                <li>Anatomy and physiology</li>
+                            </ul>
+                            <p>The department maintains a state-of-the-art laboratory and greenhouse facilities for students to conduct research and experiments.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="/api/placeholder/600/400" class="img-fluid rounded" alt="Biology Lab">
+                            <div class="ratio ratio-16x9 mt-3">
+                                <iframe src="https://www.youtube.com/embed/QnQe0xW_JY4" title="Biology Overview" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Physics & Astronomy Modal -->
+    <div class="modal fade" id="physicsModal" tabindex="-1" aria-labelledby="physicsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="physicsModalLabel">Physics & Astronomy Department</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Department Overview</h4>
+                            <p>The Physics & Astronomy Department explores the fundamental laws of nature, from quantum mechanics to astrophysics. Students engage in experimental and theoretical studies to understand the physical world.</p>
+                            <h4>Key Focus Areas:</h4>
+                            <ul>
+                                <li>Classical and modern physics</li>
+                                <li>Quantum mechanics</li>
+                                <li>Astrophysics and cosmology</li>
+                                <li>Optics and electromagnetism</li>
+                                <li>Thermodynamics and energy systems</li>
+                            </ul>
+                            <p>Our observatory and advanced physics lab provide students with opportunities to conduct experiments and astronomical observations.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="/api/placeholder/600/400" class="img-fluid rounded" alt="Physics Lab">
+                            <div class="ratio ratio-16x9 mt-3">
+                                <iframe src="https://www.youtube.com/embed/ZM8ECpBuQYE" title="Physics Overview" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chemistry Modal -->
+    <div class="modal fade" id="chemistryModal" tabindex="-1" aria-labelledby="chemistryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="chemistryModalLabel">Chemistry Department</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Department Overview</h4>
+                            <p>Our Chemistry Department focuses on understanding matter, its properties, and transformations. Students learn through laboratory experiments, analysis, and theoretical studies of chemical principles.</p>
+                            <h4>Key Focus Areas:</h4>
+                            <ul>
+                                <li>Organic and inorganic chemistry</li>
+                                <li>Analytical chemistry</li>
+                                <li>Biochemistry</li>
+                                <li>Materials science</li>
+                                <li>Green chemistry and sustainability</li>
+                            </ul>
+                            <p>The department features modern laboratories with state-of-the-art equipment for chemical analysis and synthesis.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="/api/placeholder/600/400" class="img-fluid rounded" alt="Chemistry Lab">
+                            <div class="ratio ratio-16x9 mt-3">
+                                <iframe src="https://www.youtube.com/embed/FSyAehMdpyI" title="Chemistry Overview" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>STEM Academy</h5>
+                    <p>Empowering future innovators through STEM education</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="academics.html" class="text-white">Academics</a></li>
+                        <li><a href="contact.html" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p class="mb-0">© 2025 STEM Academy. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="academics.js"></script>
+</body>
+</html>

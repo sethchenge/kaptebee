@@ -1,0 +1,451 @@
+/* 
+   STEM Academy Website Styles
+   Primary Colors: Green theme
+*/
+
+:root {
+    --primary-color: #2e7d32;      /* Dark Green */
+    --primary-light: #60ad5e;      /* Light Green */
+    --primary-dark: #005005;       /* Very Dark Green */
+    --accent-color: #43a047;       /* Medium Green */
+    --text-light: #ffffff;
+    --text-dark: #212121;
+    --bg-light: #f5f5f5;
+    --bg-gray: #eeeeee;
+    --transition-speed: 0.3s;
+}
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+.section-title {
+    color: var(--primary-dark);
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all var(--transition-speed);
+}
+
+.navbar.scrolled {
+    padding: 0.5rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--text-light);
+    font-weight: 500;
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all var(--transition-speed);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    background-color: var(--primary-light);
+    color: var(--text-light);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-light);
+}
+
+.brand-text {
+    position: relative;
+}
+
+.brand-text::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-light);
+    transform: scaleX(0);
+    transition: transform var(--transition-speed);
+    transform-origin: right;
+}
+
+.navbar-brand:hover .brand-text::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 280px;
+    height: 100%;
+    background-color: var(--primary-dark);
+    z-index: 1050;
+    transition: all var(--transition-speed);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar-header {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close-btn {
+    color: var(--text-light);
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.close-btn:hover {
+    color: var(--bg-light);
+}
+
+.sidebar-content {
+    padding: 1rem 0;
+}
+
+.sidebar .nav-link {
+    color: var(--text-light);
+    padding: 1rem 1.5rem;
+    transition: all var(--transition-speed);
+    border-left: 4px solid transparent;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background-color: var(--primary-color);
+    border-left-color: var(--text-light);
+}
+
+/* Main Content */
+.main-content {
+    transition: margin-left var(--transition-speed);
+}
+
+.main-content.sidebar-active {
+    margin-left: 280px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, var(--primary-dark), var(--primary-color));
+    color: var(--text-light);
+    padding: 5rem 0;
+    margin-bottom: 3rem;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section .lead {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.hero-buttons .btn {
+    margin-right: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-light);
+    border-color: var(--primary-light);
+}
+
+.btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hero-image {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform var(--transition-speed);
+}
+
+.hero-image:hover {
+    transform: translateY(-5px);
+}
+
+/* Admin Carousel Section */
+.admin-carousel-section {
+    padding: 4rem 0;
+    background-color: var(--bg-light);
+}
+
+.admin-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.admin-card .card-body {
+    padding: 2rem;
+}
+
+.admin-card .card-title {
+    color: var(--primary-dark);
+    margin-bottom: 0.5rem;
+}
+
+.admin-card .card-subtitle {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.admin-card small {
+    font-style: italic;
+    color: #666;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-indicators {
+    bottom: -40px;
+}
+
+.carousel-indicators button {
+    background-color: var(--primary-color);
+    opacity: 0.5;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.carousel-indicators button.active {
+    opacity: 1;
+}
+
+/* Featured Programs */
+.featured-programs {
+    padding: 4rem 0;
+    background-color: var(--bg-gray);
+}
+
+.featured-programs .card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-speed);
+}
+
+.featured-programs .card:hover {
+    transform: translateY(-10px);
+}
+
+.featured-programs .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.featured-programs .card-title {
+    color: var(--primary-dark);
+}
+
+.featured-programs .card-body {
+    padding: 1.5rem;
+}
+
+/* Latest News Section */
+.latest-news {
+    padding: 4rem 0;
+    background-color: var(--bg-light);
+}
+
+.news-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-speed);
+    height: 100%;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-date {
+    color: var(--accent-color);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.news-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--primary-dark);
+}
+
+.read-more {
+    color: var(--accent-color);
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+}
+
+.read-more::after {
+    content: '→';
+    position: relative;
+    top: 0;
+    right: -5px;
+    transition: right var(--transition-speed);
+}
+
+.read-more:hover::after {
+    right: -10px;
+}
+
+/* Footer */
+.site-footer {
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+    padding: 3rem 0 1rem;
+    margin-top: 3rem;
+}
+
+.site-footer h5 {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.site-footer h5::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--primary-light);
+}
+
+.footer-links {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color var(--transition-speed);
+}
+
+.footer-links a:hover {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.social-icons a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: color var(--transition-speed);
+}
+
+.social-icons a:hover {
+    color: var(--text-light);
+}
+
+.copyright-text {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .hero-section {
+        padding: 3rem 0;
+        text-align: center;
+    }
+    
+    .hero-section img {
+        margin-top: 2rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .admin-card .card-body {
+        padding: 1.5rem;
+    }
+    
+    .admin-card .card-title {
+        font-size: 1.25rem;
+    }
+    
+    .admin-card .card-subtitle {
+        font-size: 1rem;
+    }
+    
+    .featured-programs .card-img-top {
+        height: 180px;
+    }
+    
+    .site-footer [class^="col-"] {
+        margin-bottom: 2rem;
+    }
+}
